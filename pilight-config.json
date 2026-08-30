@@ -1,0 +1,104 @@
+{
+	"AZ": {
+		"name": "Arbeitszimmer",
+		"S1": {
+			"name": "Schalter 1",
+			"protocol": [ "pollin" ],
+			"id": [{
+				"systemcode": 31,
+				"unitcode": 1
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		},
+		"S2": {
+			"name": "Schalter 2",
+			"protocol": [ "elro_he" ],
+			"id": [{
+				"systemcode": 2,
+				"unitcode": 9
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		}
+	},
+	"FL": {
+		"name": "Flur",
+		"S1": {
+			"name": "Beleuchtung",
+			"protocol": [ "pollin" ],
+			"id": [{
+				"systemcode": 31,
+				"unitcode": 2
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		}
+	},
+	"WZ": {
+		"name": "Wohnzimmer",
+		"S1": {
+			"name": "TV",
+			"protocol": [ "rev1_switch" ],
+			"id": [{
+				"id": "F14",
+				"unit": 60
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		},
+		"S2": {
+			"name": "Licht",
+			"protocol": [ "rev1_switch" ],
+			"id": [{
+				"id": "F14",
+				"unit": 61
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		},
+		"S3": {
+			"name": "Strahler",
+			"protocol": [ "rev1_switch" ],
+			"id": [{
+				"id": "F14",
+				"unit": 62
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		}
+	},
+	"F2": {
+		"name": "Spare",
+		"S1": {
+			"name": "S1",
+			"protocol": [ "rev2_switch" ],
+			"id": [{
+				"id": "F7",
+				"unit": 0
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		},
+		"S2": {
+			"name": "S2",
+			"protocol": [ "rev2_switch" ],
+			"id": [{
+				"id": "E7",
+				"unit": 0
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		},
+		"S3": {
+			"name": "S3",
+			"protocol": [ "rev2_switch" ],
+			"id": [{
+				"id": "D7",
+				"unit": 0
+			}],
+			"state": "off",
+			"gui-readonly": 0
+		}
+	}
+}

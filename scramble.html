@@ -1,0 +1,33 @@
+<html><title>Scramble</title>
+<body>
+<!-- 
+ Small sample cgi program in Python and corresponding html page
+
+ Accepts any text and returns the scrambled text
+ Scramble rule:
+ 1) Don't scramble a word with less than 4 characters
+ 2) Keep the first and last character of the word and scramble the rest   
+ 
+ 04/14/12 framp at linux-tips-and-tricks dot de
+-->
+
+<h1>Buchstaben aller Worte im Text durchmischen/Scramble text</h1>
+
+<P>Dieses kleine Script durchmischt die Buchstaben eines jeden Wortes eines eingegebenen Textes nach folgenden Regeln:</P> 
+<OL><LI>Ein Wort mit weniger als 4 Buchstaben wird nicht geändert.</LI>
+<LI>Ein Wort behält seinen ersten und letzten Buchstaben und alle anderen Buchstaben werden zufällig vertauscht.</LI></OL>
+Bei keiner Eingabe wird ein Beispieltext zum durchmischen benutzt.
+<hr/>
+<P>This small script scrambles characters of words in a text according following rules:</P> 
+<OL><LI>A word with less than 4 characters is not modified.</LI>
+<LI>A word will keep it's first and last character and all other characters are scrambled.</LI></OL>
+If no text is provided a sample text will be scrambled.
+<hr/>
+<form method=POST action="cgi-bin/scramble.cgi">
+    <br/>
+    <textarea name=textToScramble cols=120 rows=10></textarea> 
+    <hr/>
+    <P><input type=Submit name="Scramble" value="Mischen/Scramble"> 
+</form>
+</body></html>
+

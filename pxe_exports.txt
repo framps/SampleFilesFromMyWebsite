@@ -1,0 +1,18 @@
+# See the exports(5) manpage for a description of the syntax of this file.
+# This file contains a list of all directories that are to be exported to 
+# other computers via NFS (Network File System).
+# This file used by rpc.nfsd and rpc.mountd. See their manpages for details
+# on how make changes in this file effective.
+/disks/vol1 *(rw,no_root_squash,async,no_subtree_check)
+/disks/vol3 *(rw,no_root_squash,async,no_subtree_check)
+/disks/raid1 *(rw,no_root_squash,async,no_subtree_check)
+/ *(rw,no_root_squash,async,no_subtree_check)
+
+/export/LMDE *(ro,no_root_squash,async,no_subtree_check)
+/export/LXDE *(ro,no_root_squash,async,no_subtree_check)
+/export/SuSE11.2 *(ro,no_root_squash,async,no_subtree_check)
+/export/SuSE11.3 *(ro,no_root_squash,async,no_subtree_check)
+/export/SuSE11.4 *(ro,no_root_squash,async,no_subtree_check)
+/export/SuSE11.464 *(ro,no_root_squash,async,no_subtree_check)
+#/export/vmware *(rw,no_root_squash,async,no_subtree_check)
+/disks/vol1/IsoImages *(ro,no_root_squash,async,no_subtree_check)

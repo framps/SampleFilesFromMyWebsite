@@ -1,0 +1,332 @@
+d5ea04c framp - (Sat Dec 12 19:31:39 2015 +0100) Added fallback to pre 0.6.1.1 boot backups  (HEAD, 0.6.1.1f, origin/master, master)
+9059d4a framp - (Sat Dec 12 13:41:04 2015 +0100) Added message check script 
+663d898 framp - (Sat Dec 12 13:40:43 2015 +0100) Removed unused messages and improved message handling 
+b9b65c4 framp - (Fri Dec 11 22:34:43 2015 +0100) Updated version url 
+98ea48f framp - (Wed Dec 9 20:07:25 2015 +0100) Fixed rsync issue where no hardlinks were used in some configurations  (0.6.1.1e)
+380a149 framp - (Sat Dec 5 22:43:38 2015 +0100) removed upload of cvs version log which doesn't change any more 
+a8c984c framp - (Sat Dec 5 22:27:51 2015 +0100) Updated version number  (0.6.1.1d)
+1e00843 framp - (Sat Dec 5 19:50:23 2015 +0100) Merge branch 'master' of raspifix:/home/git/raspiBackup  (development)
+3311024 framp - (Sat Dec 5 19:28:41 2015 +0100) Added flag to skik prtitioning during backup. Renamed sfdisk force option 
+132a845 framp - (Thu Dec 3 19:25:11 2015 +0100) Merge branch 'master' of raspifix:/home/git/raspiBackup 
+72e9dd0 framp - (Thu Dec 3 19:15:08 2015 +0100) Added check whether bc is installed 
+28bbb83 framp - (Wed Dec 2 22:30:21 2015 +0100) Fixed bug in removal of unused boot partition deletion  (0.6.1.1c)
+966dcc6 framp - (Tue Dec 1 22:17:34 2015 +0100) Using parted size instead of disk size now in size comarison 
+085f7c8 framp - (Mon Nov 30 20:22:44 2015 +0100) Added NL in front of and after mail body 
+6cc5db9 framp - (Sun Nov 29 19:58:41 2015 +0100) Fixed dev line 
+36ce6b4 framp - (Sun Nov 29 13:57:31 2015 +0100) sizeFormsfdisk now reads from device or file 
+b1655ee framp - (Sun Nov 29 11:05:37 2015 +0100) Merge branch 'master' of raspifix:/home/git/raspiBackup 
+5ab6a59 framp - (Sun Nov 29 11:04:38 2015 +0100) Added size calc script for sfdisk 
+a29ae90 framp - (Sat Nov 28 22:02:15 2015 +0100) Addes some more trace statemnts  (0.6.1.1b)
+4d90b36 framp - (Sat Nov 28 19:57:53 2015 +0100) Merge branch 'master' of raspifix:/home/git/raspiBackup 
+53e0586 framp - (Sat Nov 28 16:50:40 2015 +0100) Allow -P restore also on sd card 
+ecb29c6 framp - (Sat Nov 28 16:37:26 2015 +0100) Removed force option from sfdisk and introduced -f flag 
+a51a51e framp - (Fri Nov 27 22:06:00 2015 +0100) Fxied error messahe parm in email not found 
+6dea48c framp - (Fri Nov 27 17:52:59 2015 +0100) Fixed email switch arguments for ssmtp and sendemail 
+610a358 framp - (Tue Nov 24 22:44:59 2015 +0100) Updated help for supported email programs  (0.6.1.1)
+8481bc8 framp - (Tue Nov 24 21:53:36 2015 +0100) Minor regex update for cleanup 
+01b2483 framp - (Tue Nov 24 20:52:52 2015 +0100) removae of logs and boot part infos only done when non fake mode 
+3dee15b framp - (Tue Nov 24 20:32:36 2015 +0100) Cleanup also log files if saved at backup location 
+af87521 framp - (Mon Nov 23 22:14:38 2015 +0100) Added check for dosfslabel for -P restore 
+3b82aff framp - (Mon Nov 23 20:10:38 2015 +0100) Using no date for pbb mode of partition files 
+23906d5 framp - (Sun Nov 22 22:17:03 2015 +0100) Merged code to save bootpartition all the time 
+460411b framp - (Sat Nov 21 22:39:59 2015 +0100) Merged command paremeter extension 
+19f7bb4 framp - (Sat Nov 21 12:04:22 2015 +0100) deleted temp file 
+674b51e framp - (Fri Nov 20 23:35:07 2015 +0100) Removed some typos 
+59744d3 framp - (Fri Nov 20 18:22:55 2015 +0100) Merged email extension support 
+e2b98af framp - (Tue Nov 17 21:56:57 2015 +0100) Tolerate config parms  (origin/cmdline_mod)
+cde2699 framp - (Tue Nov 17 20:04:21 2015 +0100) Install script now saves old existing files 
+d7d982d framp - (Mon Nov 16 21:36:23 2015 +0100) corrected version number  (0.6.1b)
+24b1dd5 framp - (Mon Nov 16 21:28:03 2015 +0100) added check for missing file parm 
+afcaed1 framp - (Mon Nov 16 21:20:19 2015 +0100) merge with master 
+e081487 framp - (Mon Nov 16 21:18:26 2015 +0100) -p and -r parm check modified 
+8aaf7b4 framp - (Mon Nov 16 21:09:05 2015 +0100) save 
+67eadf0 framp - (Sun Nov 15 18:57:30 2015 +0100) version updated - fixed parted syntax 
+8aba4dd framp - (Sun Nov 15 18:20:07 2015 +0100) version updated  (origin/email_extension)
+8b9f60e framp - (Sun Nov 15 18:14:36 2015 +0100) Added sample mailext extension 
+ae65b4a framp - (Sun Nov 15 16:28:25 2015 +0100) Fixed parted issue (no device used) and umount only done for /tmp/... mounts to keep existing mounts 
+704b2fe framp - (Sun Nov 15 15:28:13 2015 +0100) save 
+022a20f framp - (Sat Nov 14 15:08:23 2015 +0100) save 
+cbfba9c framp - (Sat Nov 14 13:22:15 2015 +0100) Cleanupwork 
+df32896 framp - (Sat Nov 14 13:20:28 2015 +0100) Merge branch 'master' of raspifix:/home/git/raspiBackup 
+fbeb57c framp - (Sat Nov 14 13:19:00 2015 +0100) Cleanupwork 
+b7039e9 framp - (Sat Nov 14 12:26:51 2015 +0100) data 
+8c4d2fd framp - (Fri Nov 13 22:09:45 2015 +0100) Updating webpage update time  (0.6.1)
+29afa0f framp - (Fri Nov 13 19:08:11 2015 +0100) Updated tests 
+fedbcc0 framp - (Fri Nov 13 19:06:17 2015 +0100) Changed -y message 
+9774f42 framp - (Wed Nov 11 22:21:13 2015 +0100) Merge branch 'master' into master_copy 
+a317343 framp - (Wed Nov 11 21:41:35 2015 +0100) Merge branch 'master_copy' 
+6e2e78c framp - (Wed Nov 11 20:09:46 2015 +0100) GA of release 0.6.1 
+ec0e6e7 framp - (Mon Nov 9 21:42:19 2015 +0100) Missing quotes for restore basename to support spaces in filenames 
+b8d8a24 framp - (Sun Nov 8 22:44:20 2015 +0100) Creation/removal of backup dir handled with CTRLC  (0.6.0.19)
+a6497bb framp - (Sun Nov 8 19:17:06 2015 +0100) Typos in messages 
+d5f39f8 framp - (Sun Nov 8 19:14:14 2015 +0100) removed xbmc and added check for > 2 partitions and ! -P 
+e2d7525 framp - (Sun Nov 8 18:19:07 2015 +0100) fixed issue with spaces in relative path 
+e24b83b framp - (Sat Nov 7 22:54:29 2015 +0100) relative pathes also can have spaces 
+43e90fb framp - (Sat Nov 7 21:46:52 2015 +0100) Added constant DEVICE 
+8be0abc framp - (Wed Nov 4 20:07:57 2015 +0100) Added missing merge for - issue in filename  (0.6.0.18)
+1b846b4 framp - (Mon Nov 2 22:24:27 2015 +0100) Removed reject of relative file/directory names  (0.6.0.17)
+4f6b28f framp - (Mon Nov 2 20:07:20 2015 +0100) Moved log lines for partition files behind check for existence of files and add ls -la for restore in log  (0.6.0.16)
+3c6d5dd framp - (Sun Nov 1 21:28:16 2015 +0100) logging improvements  (0.6.0.15)
+40f9f7f framp - (Sat Oct 31 10:40:26 2015 +0100) Added some debug statements to get info about target device for backup (space used/free, filesystem)  (0.6.0.14)
+d292581 framp - (Sat Oct 31 10:33:34 2015 +0100) Deleted a file 
+03c33be framp - (Fri Oct 30 20:41:24 2015 +0100) Removed -K flag for handlinks 
+722cdec framp - (Fri Oct 30 20:34:33 2015 +0100) Save: Exit improvements 
+65d883a framp - (Fri Oct 30 20:33:59 2015 +0100) Save: Exit improvements 
+4a48fac framp - (Fri Oct 30 16:15:13 2015 +0100) Checking for missing quotes in invocation parameters  (0.6.0.12)
+863b7ee framp - (Fri Oct 30 14:56:02 2015 +0100) Fixed issue in cleanup and imporved fake function in P mode  (0.6.0.11)
+6bd8b5a framp - (Thu Oct 29 22:32:43 2015 +0100) Failure in backup of a partition now captured  (0.6.0.10)
+6279ea3 framp - (Wed Oct 28 21:10:02 2015 +0100) tar restore also has issues with permissions and ownership. Modified tar save and restore options and some minor other changes  (0.6.0.9)
+e0e33eb framp - (Tue Oct 27 19:27:33 2015 +0100) Added som traces statements for new defaults 
+b4a17a9 framp - (Tue Oct 27 19:12:28 2015 +0100) Streamined header 
+20476e8 framp - (Mon Oct 26 20:41:32 2015 +0100) Modified comment for -y 
+db34744 framp - (Mon Oct 26 20:41:32 2015 +0100) Modified comment for -y 
+3c36c6b framp - (Mon Oct 26 19:09:54 2015 +0100) Added -Y implementation 
+96acba3 framp - (Sun Oct 25 19:29:14 2015 +0100) Deleted some files 
+2f9b39a framp - (Sun Oct 25 19:27:55 2015 +0100) Using normal exit is possible - kill just used when CTRL C is used 
+b1631dc framp - (Sun Oct 25 11:44:20 2015 +0100) Merged beta06 code into master 
+bee3a37 framp - (Sat Oct 24 20:34:01 2015 +0200) Added signature 
+01494ab framp - (Sat Oct 24 18:41:52 2015 +0200) Fixed RC1 in restore and removed * from parted list in restore  (0.6.0.7)
+95bd087 framp - (Fri Oct 23 19:10:23 2015 +0200) Fixed -R bug  (0.6.0.6)
+7fe9d13 framp - (Thu Oct 22 21:33:27 2015 +0200) -y follows standard parameter and configuration processing 
+b2860b0 framp - (Thu Oct 22 19:40:33 2015 +0200) Merged -Y parameter from beta code 
+80fc719 framp - (Wed Oct 21 22:58:39 2015 +0200) Fixed uploadBeta script  (0.6.0.5)
+5d3cbb8 framp - (Wed Oct 21 22:20:02 2015 +0200) Added check for -R for -P restore  (0.6.0.4)
+b4c57de framp - (Sun Oct 4 19:04:48 2015 +0200) Cherry picked -X removal and addition of -V 
+eb6d8d7 framp - (Wed Oct 21 20:08:55 2015 +0200) Updated version 
+369a18f framp - (Wed Oct 21 19:59:55 2015 +0200) Merge branch 'beta06' of raspifix:/home/git/raspiBackup into beta06 
+a31f4c0 framp - (Wed Oct 21 19:42:19 2015 +0200) Removing Hopg flags for fat filesystem during restore 
+bd62c94 framp - (Mon Oct 19 21:41:57 2015 +0200) Minor change  (0.6.0.3)
+2d3b0b2 framp - (Mon Oct 19 21:21:01 2015 +0200) Added meld as diff tool in config 
+d7f1abe framp - (Mon Oct 19 21:18:15 2015 +0200) Restore also accepts CTRL-C 
+ea3cd10 framp - (Sun Oct 18 22:33:07 2015 +0200) Temp: Save 
+a26300e framp - (Sat Oct 17 21:44:05 2015 +0200) -P restore CTRL-C terminates and cleans up :-) 
+28f7c29 framp - (Sat Oct 17 21:32:29 2015 +0200) Temp: CTRL-C wokrs 
+295c803 framp - (Sat Oct 17 19:43:34 2015 +0200) Temp: Umount works - check for mount still buggy 
+dafc753 framp - (Sat Oct 17 18:13:21 2015 +0200) Temp: partitionName used 
+ea7f4d5 framp - (Sat Oct 17 17:34:52 2015 +0200) Temp: P backup will mount/umount all parts at once 
+eb0ffa1 framp - (Sat Oct 17 16:46:17 2015 +0200) Temp: Changed trap processing and added trapTest.sh 
+593121b framp - (Fri Oct 16 20:17:10 2015 +0200) aTemp: Added testTrap.sh 
+b29b223 framp - (Fri Oct 16 19:23:02 2015 +0200) Temp: Share changes for trap processing 
+05ba3b4 framp - (Tue Oct 13 19:53:53 2015 +0200) Removed xbmc in header 
+e430fab framp - (Mon Oct 12 19:29:11 2015 +0200) Adding user config files 
+8b34414 framp - (Sun Oct 11 22:24:26 2015 +0200) Ignoring backup directory from now 
+d92b4ac framp - (Sun Oct 11 22:22:12 2015 +0200) Added icons 
+c869dda framp - (Sun Oct 11 20:20:53 2015 +0200) Added -V parameter to revert to previous script version 
+c2d6be4 framp - (Sat Oct 10 23:03:47 2015 +0200) Moved root check 
+be07735 framp - (Sat Oct 10 18:39:00 2015 +0200) Adding gitConfigs 
+6bdff93 framp - (Sat Oct 10 17:38:49 2015 +0200) Added ex scripts 
+353e3c1 framp - (Sat Oct 10 17:38:49 2015 +0200) Added ex scripts 
+2d69f25 framp - (Sat Oct 10 17:37:26 2015 +0200) Added uploadBeta script 
+892fe53 framp - (Fri Oct 9 17:40:43 2015 +0200) Merge branch 'current' 
+7a31915 framp - (Fri Oct 9 17:04:47 2015 +0200) Fixed bash check bug 
+0f253f6 framp - (Fri Oct 9 17:24:15 2015 +0200) Merge branch 'current' 
+9996205 framp - (Fri Oct 9 17:04:47 2015 +0200) Fixed bash check bug 
+1140a2b framp - (Fri Oct 9 17:04:03 2015 +0200) Fixed bash check bug  (0.5.15.8.5)
+1990bef framp - (Thu Oct 8 20:06:53 2015 +0200) Added EMAIL_PARMS to mail also 
+1827101 framp - (Wed Oct 7 20:40:33 2015 +0200) Updated testcasedocs 
+d8a026b framp - (Mon Oct 5 20:49:10 2015 +0200) Added Betaplan 
+6e1f4d9 framp - (Sun Oct 4 19:04:48 2015 +0200) Removed the ancien -X flag  (0.6.0.2)
+b9e4228 framp - (Sat Oct 3 19:03:06 2015 +0200) Added testplan  (0.6.0.1)
+442bd37 framp - (Fri Oct 2 22:52:20 2015 +0200) another restore msg is now of type minimal 
+7ddcaff framp - (Fri Oct 2 22:49:01 2015 +0200) restore msg is now of type minimal 
+cc48ddc framp - (Fri Oct 2 21:18:12 2015 +0200) parted file contains only mmcblk0 devide data 
+5ad8fc5 framp - (Fri Oct 2 20:06:57 2015 +0200) Update test for beta No3 
+4eb2c45 framp - (Fri Oct 2 20:04:06 2015 +0200) Update test for beta No2 
+7729c85 framp - (Wed Sep 30 22:01:09 2015 +0200) Using beta path on website 
+4bdcb61 framp - (Tue Sep 29 21:12:16 2015 +0200) Fixed rc!=0 for tar rst 
+aede379 framp - (Mon Sep 28 22:27:12 2015 +0200) Addes addtl debug 
+67c598f framp - (Mon Sep 28 20:54:57 2015 +0200) Fixed missing size display in restore 
+0c54480 framp - (Mon Sep 28 20:15:39 2015 +0200) Language case insensitive 
+0eb5c5a framp - (Sun Sep 27 18:55:19 2015 +0200) Fixed typo in message 
+342191a framp - (Sat Sep 26 13:24:16 2015 +0200) Improved messge 
+2af9f8c framp - (Sat Sep 26 13:23:08 2015 +0200) Revert "Improved messge" 
+65c679a framp - (Sat Sep 26 13:22:25 2015 +0200) Improved messge 
+afa1cc6 framp - (Sat Sep 26 13:11:04 2015 +0200) Added raspiBackup.sh again 
+1d1dbb4 framp - (Sat Sep 26 13:08:33 2015 +0200) Revert "Revert "Improved installer"" 
+36dee12 framp - (Sat Sep 26 13:06:32 2015 +0200) Revert "Improved installer" 
+ca4e685 framp - (Sat Sep 26 13:00:22 2015 +0200) Improved installer 
+feb2bff framp - (Thu Sep 24 22:54:20 2015 +0200) Added check for interpreter bash 
+0e3ea55 framp - (Wed Sep 23 20:14:09 2015 +0200) Merge branch 'master' into merge 
+36fc762 framp - (Wed Sep 23 19:55:57 2015 +0200) Streamlined the default parameter section and created sample files for conf in en and de 
+5526906 framp - (Sun Sep 20 21:43:24 2015 +0200) Added missing exit 
+9a394f8 framp - (Sun Sep 20 21:09:26 2015 +0200) Updated version number 
+1f6d64f framp - (Sun Sep 20 20:37:53 2015 +0200) Fixed issue with extension rc check 
+54ce61e framp - (Sun Sep 20 20:33:04 2015 +0200) Fixed issue with start/stop services RC check 
+874b9be framp - (Thu Sep 17 20:01:38 2015 +0200) Adding missing popd in legacy restore tar 
+51aeeb4 framp - (Thu Sep 17 18:02:05 2015 +0200) Enhanced restore regressiontest 
+ce5f5e1 framp - (Thu Sep 17 16:52:45 2015 +0200) Fixed umount issue in legacy dd restore and added option -Y to simplify regression test 
+83010eb framp - (Thu Sep 17 15:08:42 2015 +0200) Fixed umount issue for legacy tar restore 
+8acaa23 framp - (Wed Sep 16 22:48:57 2015 +0200) Updated regression test scripts 
+7aa76dc framp - (Tue Sep 15 23:16:57 2015 +0200) Moved file size into other message and moved backup complete message 
+ee30928 framp - (Tue Sep 15 22:00:09 2015 +0200) Added filesystem size in restore message 
+6549f94 framp - (Tue Sep 15 19:46:29 2015 +0200) Added quotes for spaces in filenames in new -P code 
+73507aa framp - (Tue Sep 15 19:38:40 2015 +0200) Added quotes for spaces in filenames in new -P code 
+87e6cc6 framp - (Tue Sep 15 15:34:33 2015 +0200) Updated script header 
+05c564b framp - (Tue Sep 15 14:51:25 2015 +0200) Fixed missing display of MB to xfer in -P mode 
+fabcc29 framp - (Tue Sep 15 14:29:26 2015 +0200) Fixed filename space issue in tar backup in legacy mode 
+9c1e1b6 framp - (Tue Sep 15 11:15:29 2015 +0200) Fixed uggly issue with whitespaces in names (removed eval by error :-(( ) 
+7ac290b framp - (Mon Sep 14 19:32:26 2015 +0200) Merge minor updates from master 
+81e5dbb framp - (Mon Sep 14 17:05:27 2015 +0200) Updated primary default parm check and handling 
+beb0411 framp - (Mon Sep 14 15:48:12 2015 +0200) Fixed cat of maillog with spaces 
+1bd9a16 framp - (Mon Sep 14 15:06:13 2015 +0200) Updated test scripts 
+57d1047 framp - (Mon Sep 14 14:10:13 2015 +0200) Moved checkAndCorrectParms 
+6de0437 framp - (Mon Sep 14 14:07:55 2015 +0200) Moved checkAndCordectParms 
+3f0da68 framp - (Mon Sep 14 13:37:15 2015 +0200) First merge of prtitionbasedbackup 
+dda3419 framp - (Sun Aug 30 00:19:17 2015 +0200) Important parms are now reset to defaults 
+115de6e framp - (Sat Aug 29 21:16:20 2015 +0200) Modified message format 
+2537bcd framp - (Sat Aug 29 21:00:59 2015 +0200) Fixed issue with check for supported fs and added disk size in save message 
+3b06924 framp - (Sat Aug 29 19:17:56 2015 +0200) Important parameters are now checked also from config files 
+3647543 framp - (Sat Aug 22 22:02:08 2015 +0200) -U now done unconditionally 
+629206f framp - (Sat Aug 22 21:35:55 2015 +0200) -U now done unconditionally 
+762e3fc framp - (Sat Aug 22 21:25:53 2015 +0200) -U now done unconditionally 
+c03d3e6 framp - (Tue Aug 18 21:53:48 2015 +0200) limit update check 
+f512f6d framp - (Tue Aug 18 19:00:09 2015 +0200) merged lanuage fix 
+dc6c9c5 framp - (Mon Aug 17 21:14:30 2015 +0200) error handling and messages improved 
+e8e12c0 framp - (Mon Aug 17 18:46:49 2015 +0200) modified cleanup code ... still needs improvement 
+4bdec8e framp - (Mon Aug 17 17:37:44 2015 +0200) added pre check for supported filesystems in backup 
+31abb5e framp - (Sun Aug 16 22:37:54 2015 +0200) added pre check for supported filesystems 
+5a3f7de framp - (Sun Aug 16 19:29:42 2015 +0200) Save skips unformatted partitions, some new messages 
+3cbebc4 framp - (Sun Aug 16 14:20:18 2015 +0200) eMail message now also possible to change with -G 
+ded92b2 framp - (Sun Aug 16 14:00:06 2015 +0200) executecommand rc handling changed 
+2d8ca34 framp - (Thu Aug 13 21:50:22 2015 +0200) Fixed issues with link-dest and other places with spaces in names. Tahnk you Ganfoud for testing and reporting this issue 
+30d65ac framp - (Wed Aug 12 22:24:17 2015 +0200) save 
+62fc711 framp - (Wed Aug 12 20:53:28 2015 +0200) Using backuppath with space in name now 
+c5d08e2 framp - (Wed Aug 12 20:47:59 2015 +0200) Added som addtl quotes 
+502ab30 framp - (Wed Aug 12 20:37:50 2015 +0200) Restore stilll had some missing quotes 
+07eaf27 framp - (Wed Aug 12 00:38:44 2015 +0200) Allow file/directorynames with spaces also in restore+ 
+2b7f060 framp - (Wed Aug 12 00:02:08 2015 +0200) Allow file/directorynames with spaces+ 
+18079cb framp - (Fri Aug 7 23:35:11 2015 +0200) umount after backup keeps one partition --- bug 
+bbf23eb framp - (Fri Aug 7 22:07:23 2015 +0200) Just save 
+7ff8023 framp - (Fri Aug 7 21:32:14 2015 +0200) Format & label modified 
+67f1dba framp - (Wed Aug 5 21:53:53 2015 +0200) Save current work 
+1822e82 framp - (Wed Aug 5 20:54:30 2015 +0200) Minor updates to merge 
+9b5f9c1 framp - (Wed Aug 5 20:51:12 2015 +0200) Merged master stream 
+e0c4812 framp - (Wed Aug 5 20:31:33 2015 +0200) Added help text for Parameter -U  (0.5.15.7)
+3b2bb63 framp - (Wed Aug 5 19:51:30 2015 +0200) extension gets rc als parameter 
+56586ef framp - (Wed Aug 5 18:07:16 2015 +0200) removed raspiBackup part in log file 
+d933e7c framp - (Tue Aug 4 22:41:30 2015 +0200) Enhancement for -L2 -t rsync bug 
+693bd8b framp - (Tue Aug 4 21:32:36 2015 +0200) Now -t rsync and -L 2 creates log 
+b19cb5e framp - (Tue Aug 4 21:17:45 2015 +0200) Cleanup of cherry pick 
+6738e73 framp - (Sun Jun 14 19:27:28 2015 +0200) cherry-picked -G parameter 
+d4c4dd1 framp - (Tue Aug 4 20:31:57 2015 +0200) Allow 365 backups to keep (1 year daily) 
+a56de39 framp - (Tue Aug 4 20:08:35 2015 +0200) Allow 365 backups to keep (1 year daily) 
+c6a087a framp - (Mon Aug 3 22:33:57 2015 +0200) Save current code 
+36fdbc6 framp - (Mon Aug 3 22:11:13 2015 +0200) Now using parted to extract the partition format 
+91337ad framp - (Mon Aug 3 20:17:21 2015 +0200) /media and /mnt no longer exluded 
+44751f3 framp - (Sun Aug 2 21:14:06 2015 +0200) Added check whether backup can be written in directory 
+2f2c410 framp - (Sun Aug 2 20:30:19 2015 +0200) Changed target backup dir to ...PM 
+4ca4253 framp - (Sun Aug 2 20:12:09 2015 +0200) Added link to raspiBackup.sh in test dir 
+ac04fd6 framp - (Sun Aug 2 19:16:26 2015 +0200) Updated test scripts for partitionmode 
+0678cc4 framp - (Sun Aug 2 19:14:17 2015 +0200) Changed extraction of hostname and backup type in restore 
+780d620 framp - (Sat Aug 1 13:34:34 2015 +0200) Collection parted output also now, added todos 
+f532115 framp - (Thu Jul 30 20:44:47 2015 +0200) Corrected help text 
+aa35e33 framp - (Wed Jul 29 22:21:41 2015 +0200) Fixed regression 
+9007609 framp - (Wed Jul 29 20:48:36 2015 +0200) Fixed typo for dd backup of boot partition 
+4aba716 framp - (Tue Jul 28 22:20:51 2015 +0200) restore rc handling 
+93a48c2 framp - (Tue Jul 28 20:15:53 2015 +0200) remove perl usage 
+9cc687e framp - (Tue Jul 28 20:09:51 2015 +0200) executecmd updated, error handling for restore improved 
+4499e37 framp - (Mon Jul 27 21:12:50 2015 +0200) Added check that target card is big enough 
+f7653db framp - (Mon Jul 27 20:52:51 2015 +0200) fixed rel log file bug, fixed partition name issue 
+0793343 framp - (Sat Jul 25 19:51:13 2015 +0200) script rc passed to post extension point 
+b62de58 framp - (Sat Jul 25 14:32:56 2015 +0200) assertion/aborts streamlined 
+9b24dbb framp - (Sat Jul 25 13:54:39 2015 +0200) Paritions are now labeled 
+0014fbe framp - (Fri Jul 24 22:46:22 2015 +0200) Added link to version page in email 
+da7e39c framp - (Fri Jul 24 21:28:43 2015 +0200) Changed -I to -T for usability reasons 
+7aada4d framp - (Fri Jul 24 20:25:21 2015 +0200) Added traces 
+7d3b632 framp - (Mon Jul 20 21:30:49 2015 +0200) Updated copyright 
+1513d1a framp - (Sun Jul 19 22:31:40 2015 +0200) Added some sample sfdisk and fdisk outputs from some SD cards 
+e1642f3 framp - (Sun Jul 19 22:30:44 2015 +0200) First successfull restore of noobs 
+2857162 framp - (Sat Jul 18 20:15:28 2015 +0200) Fixed - but don't understand - mount issue. Formating of partitions also added 
+4312d82 framp - (Fri Jul 10 21:08:36 2015 +0200) Added parition list and restore confirmation. umount not possible because of device busy :-( 
+e9f876e framp - (Thu Jul 9 22:33:02 2015 +0200) Mounting OK 
+69a0adb framp - (Thu Jul 9 20:38:04 2015 +0200) Loop of partitions OK now 
+a39d25a framp - (Thu Jul 9 19:43:17 2015 +0200) Added help text for new parameters for partition backup mode 
+1e46785 framp - (Tue Jul 7 21:35:02 2015 +0200) Added message to check error log 
+c58c510 framp - (Sat Jun 27 17:02:33 2015 +0200) Added creation of blkid output 
+8f515df framp - (Sun Jun 14 21:03:03 2015 +0200) blkid is saved during backup also 
+34df706 framp - (Sun Jun 14 19:27:28 2015 +0200) Added flag G to define the language to use instead of the system language 
+961be30 framp - (Fri Jun 12 21:23:49 2015 +0200) Split odl new backup works now 
+ba95a14 framp - (Fri Jun 12 20:03:50 2015 +0200) Fixed ext partition type typo 
+01b457d framp - (Sat Jun 6 22:30:48 2015 +0200) Fixed typo 
+21cefd3 framp - (Sat Jun 6 21:11:08 2015 +0200) Started with restore loop for partitions 
+7121a63 framp - (Sat Jun 6 18:57:21 2015 +0200) restore splitted into old fashion and new fashion 
+7666376 framp - (Sat Jun 6 16:32:17 2015 +0200) rsync works also now 
+3df74b5 framp - (Sat Jun 6 16:05:26 2015 +0200) rsync works also now 
+bfefd00 framp - (Fri Jun 5 21:23:03 2015 +0200) tar backup works now - rsync has still issuses 
+880d7d6 framp - (Fri Jun 5 15:14:13 2015 +0200) Handling of -I parameter OK now 
+8c3b61f framp - (Thu Jun 4 23:53:06 2015 +0200) Added partition backup - not complete 
+2e7ccdc framp - (Thu May 28 21:26:10 2015 +0200) Added check for partitions availability and flag -I 
+291e71b framp - (Thu May 28 12:40:23 2015 +0200) Added -P flag and some initial checks 
+639d41a framp - (Tue May 26 15:51:00 2015 +0200) Allowing dd and ddz backup with > 2 partitions  (0.5.15)
+61557af framp - (Mon May 25 18:43:40 2015 +0200) Final polishing of extensions 
+3bd4f82 framp - (Sun May 24 23:07:45 2015 +0200) Updated message2 
+cd5a40b framp - (Sun May 24 21:12:26 2015 +0200) Updated message 
+6408c87 framp - (Thu May 21 20:18:06 2015 +0200) Fixed temp bug 
+700c4bc framp - (Thu May 21 18:16:14 2015 +0200) Added sample extensions 
+b0fd740 framp - (Wed May 20 23:03:30 2015 +0200) Added support for multiple extensions 
+88c94e5 framp - (Wed May 20 22:32:39 2015 +0200) Merge branch 'master' into extensions 
+10fb2d9 framp - (Wed May 20 22:05:05 2015 +0200) Corrceted typo in message constant 
+0cbd4d1 framp - (Tue May 12 22:06:24 2015 +0200) Added comments 
+37b87ec framp - (Tue May 12 20:32:20 2015 +0200) Initial extensionpoint version 
+fef698d framp - (Fri Mar 27 18:07:23 2015 +0100) No check for root partition on sd card done any more  (0.5.14.8)
+9324d9d framp - (Sun Mar 22 18:30:45 2015 +0100) Fixed message format bug for start7stop message and fixed -a/-o parm issue  (0.5.14.7)
+27bbea6 framp - (Sat Mar 21 20:39:13 2015 +0100) ignore history log file in git 
+14b9582 framp - (Sat Mar 21 18:32:06 2015 +0100) Adding cvs and git logs during upload 
+4eb4e8a framp - (Sat Mar 14 19:32:57 2015 +0100) Backup now gets the version number and added localization messages for some still hard coded english messages  (0.5.14.6)
+2e4b4dc framp - (Sat Mar 14 18:23:58 2015 +0100) Install script added 
+49709b9 framp - (Thu Mar 12 22:59:18 2015 +0100) Added pytho sctip to update upload date 
+f8e5bb0 framp - (Thu Mar 12 22:57:48 2015 +0100) Added update of date on website 
+dcb76f8 framp - (Thu Mar 12 20:44:20 2015 +0100) corrected version  (0.5.14.5)
+362b888 framp - (Thu Mar 12 20:42:49 2015 +0100) restore file or directory checked to be valid (3nd) 
+79dbeb9 framp - (Wed Mar 11 22:37:33 2015 +0100) restore file or directory checked to be valid (2nd) 
+e5835bf framp - (Wed Mar 11 22:06:23 2015 +0100) test updated 
+b5c8bb1 framp - (Mon Mar 2 23:28:08 2015 +0100) restore device has to be a device  (0.5.14.4)
+1c3b55f framp - (Fri Feb 27 20:22:54 2015 +0100) Added test directory 
+39673c6 framp - (Fri Feb 27 16:32:41 2015 +0100) Handing of p1/p2 for sd card or loop device  (0.5.14.3)
+9ab5165 framp - (Thu Feb 26 22:08:10 2015 +0100) Fixed update issue  (0.5.14.2)
+efc39da framp - (Thu Feb 26 18:34:32 2015 +0100) Mostly finished restore improvement  (0.5.14.1)
+65b815c framp - (Thu Feb 26 18:24:57 2015 +0100) getMessage now accepts multiplin strings 
+8af4b89 framp - (Wed Feb 25 13:36:50 2015 +0100) moved -l to end of gparted 
+fe79af3 framp - (Wed Feb 25 12:03:29 2015 +0100) Using parted now instead of fdisk  (0.5.14)
+f2d510c framp - (Tue Feb 24 17:10:07 2015 +0100) Added kvm to ignore list  (0.5.13.1)
+02dbddc framp - (Tue Feb 24 17:07:28 2015 +0100) Minor typo in restore message fixed 
+3d3fb1f framp - (Tue Feb 24 16:22:48 2015 +0100) Mostly final version  (0.5.13)
+03cb18d framp - (Tue Feb 24 13:57:02 2015 +0100) mnt issue fixed 
+de8a30e framp - (Tue Feb 24 13:44:11 2015 +0100) First draft 
+1a4725d framp - (Mon Feb 23 22:19:00 2015 +0100) Merge branch 'reportprogress'  (0.5.12)
+c9ed873 framp - (Mon Feb 23 22:16:04 2015 +0100) Final Version of addtl messages 
+3198302 framp - (Sun Feb 22 21:00:16 2015 +0100) First set of messages added 
+17e3e48 framp - (Sun Feb 22 20:35:20 2015 +0100) upload changed for new version check 
+93eec08 framp - (Sun Feb 22 19:49:13 2015 +0100) Fixed version number  (0.5.11)
+be6aa7f framp - (Sun Feb 22 19:48:48 2015 +0100) Fixed bug in version handling and udpated message 
+9b7f201 framp - (Sun Feb 22 19:42:39 2015 +0100) Added help text for update notification 
+9fa4f01 framp - (Sun Feb 22 19:08:50 2015 +0100) Changed version now to 0.5.11 
+4b41daf framp - (Sun Feb 22 19:03:17 2015 +0100) Save mostly final code 2 
+52b0cd6 framp - (Sun Feb 22 18:06:46 2015 +0100) Save current code 
+e2d5792 framp - (Sun Feb 22 17:45:34 2015 +0100) Merge of working version of code level 
+2881b9d framp - (Sat Feb 21 23:18:33 2015 +0100) Merge branch 'zhandling' into integrate  (0.5.10)
+20ca5e1 framp - (Sat Feb 21 22:05:11 2015 +0100) Initial testtool versions 
+d6fd3bc framp - (Sat Feb 21 21:26:52 2015 +0100) Removed message when del tag writes error 
+d4a9868 framp - (Sat Feb 21 21:24:11 2015 +0100) Updated version number  (0.5.9.2)
+f4e3e72 framp - (Sat Feb 21 21:19:09 2015 +0100) Another message typo 
+d375954 framp - (Sat Feb 21 20:49:49 2015 +0100) Fixed typo in message  (0.5.9.1)
+b3dcdb7 framp - (Sat Feb 21 16:12:22 2015 +0100) Removin temp files 
+e88f0ca framp - (Sat Feb 21 16:12:05 2015 +0100) Removin temp files 
+4d83234 framp - (Sat Feb 21 15:52:37 2015 +0100) Save current version 
+13d1d0b framp - (Sat Feb 21 13:37:39 2015 +0100) Deleting file to get latest version from checkout 
+5c50ead framp - (Fri Feb 20 21:15:00 2015 +0100) First shot in branch 
+4cd2d9b framp - (Fri Feb 20 19:40:08 2015 +0100) GIT_VERSION typo  (0.5.9)
+2f2140c framp - (Fri Feb 20 19:27:03 2015 +0100) Checked in date/sha mod scripts 
+352fbae framp - (Fri Feb 20 19:24:44 2015 +0100) Minor typo in id 
+7f08f96 framp - (Fri Feb 20 19:23:03 2015 +0100) Changed format of code id 
+7c1d509 framp - (Fri Feb 20 19:16:02 2015 +0100) Added sha in message and log 
+a4b7df3 framp - (Fri Feb 20 19:12:37 2015 +0100) Added sha1 
+0ccac99 framp - (Fri Feb 20 18:54:45 2015 +0100) Introdcued sha1 in code 
+c14a012 framp - (Fri Feb 20 18:52:22 2015 +0100) Using date also form GIT 
+0c49637 framp - (Fri Feb 20 18:17:58 2015 +0100) Renamed var name CVS_ to GIT_ and use now redirect URL 
+bf03d71 framp - (Thu Feb 19 22:47:09 2015 +0100) Changed URL to get version 
+6878166 framp - (Thu Feb 19 21:09:03 2015 +0100) Fixed version issue 
+202c53a framp - (Thu Feb 19 20:16:57 2015 +0100) Streamlined version update 
+831d1df framp - (Thu Feb 19 20:16:24 2015 +0100) Streamlined version update 
+b369bda framp - (Thu Feb 19 19:30:33 2015 +0100) Initial git version - is CVS version 0.5.8.8 
+8a67fe4 framp - (Thu Feb 19 19:29:14 2015 +0100) git control files 

@@ -1,0 +1,44 @@
+<html><title>Framp&#039;s text scramble</title>
+<meta http-equiv="content-type" content="text-html; charset=utf-8">
+<script type="text/javascript" src="scramble.js"></script>
+</head>
+<body onload="loadText()">
+<!-- 
+ Small sample java script program and html page
+
+ Accepts any text and returns the scrambled text
+ Scramble rule:
+ 1) Don't scramble a word with less than 4 characters
+ 2) Keep the first and last character of the word and scramble the rest   
+ 
+ 11/29/12 framp at linux-tips-and-tricks dot de
+-->
+
+<div id=german>
+<h1>Buchstaben aller Worte im Text durchmischen</h1>
+<hr/>
+<P>Dieses kleine Script durchmischt die Buchstaben eines jeden Wortes eines eingegebenen Textes nach folgenden Regeln:</P> 
+<OL><LI>Ein Wort mit weniger als 4 Buchstaben wird nicht geändert.</LI>
+<LI>Ein Wort behält seinen ersten und letzten Buchstaben und alle anderen Buchstaben werden zufällig vertauscht.</LI></OL>
+</div>
+<div id=english>
+<h1>Scramble text</h1>
+<hr/>
+<P>This small script scrambles characters of words in a text according following rules:</P> 
+<OL><LI>A word with less than 4 characters is not modified.</LI>
+<LI>A word will keep it's first and last character and all other characters are scrambled.</LI></OL>
+</div>
+<p />
+<hr/>
+<p />
+<textarea id=textToScramble cols=60 rows=10>
+</textarea> 
+<textarea id=scrambledText cols=60 rows=10>
+</textarea> 
+<p />
+<button id=sampleButton type="button" onclick="loadText()">Beispieltext/Sample text</button>
+<button id=scrambleButton type="button" onclick="displayText()">Mischen/Scramble</button>
+<button id=clearButton type="button" onclick="clearText()">Löschen/Clear</button>
+</body>
+</html>
+

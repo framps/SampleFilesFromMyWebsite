@@ -1,0 +1,52 @@
+require ["fileinto", "reject"];
+
+#
+# aller GMX Kram
+#
+
+if header :contains "From" ["GMX Magazin", "GMX Best Price"] {
+#	redirect "hugo@framp.de";
+#	reject "Don't want you";
+	fileinto "inbox.gmx";
+	}
+
+#
+# aller eBay Kram
+#	
+	
+elsif header :contains "From" ["eBay.de-Team"] {
+	fileinto "inbox.ebay";
+}
+
+#
+# Alle die Kontakt zu meiner website im Subject haben
+#
+
+elsif allof (header :contains "Subject" ["Kontakt"], 
+	header :contains "To" ["@mywebsite.de"]) {
+	fileinto "inbox.wskontakt Kontakt";
+}
+
+#
+# der Rest der was von meiner Website will
+#
+
+elsif header :contains "To" ["@mywebsite.de"] {
+	fileinto "inbox.ws";
+}
+
+#
+# alle root messages
+#
+
+elsif header :contains "To" ["root@framp.de"] {
+	fileinto "inbox.root";
+}
+
+#
+# und alles andere soll zu mir in die normale Inbox
+#
+
+else { fileinto "inbox";
+	}
+

@@ -1,0 +1,50 @@
+# hard disk
+label harddisk
+  localboot 0x80
+
+# install
+label suse64
+  kernel suse64/linux 
+  append initrd=suse64/initrd splash=silent showopts insmod=e100 install=nfs://192.168.0.5/export/SuSE11.464 vga=791
+
+label suse32
+  kernel suse32/linux 
+  append initrd=suse32/initrd splash=silent showopts insmod=e100 install=nfs://192.168.0.5/export/SuSE11.4 vga=791
+
+label LXDE
+  kernel LXDE/vmlinuz
+  append boot=casper initrd=LXDE/initrd.lz ip=dhcp showmounts file=/cdrom/preseed/mint.seed netboot=nfs nfsroot=192.168.0.5:/export/LXDE quiet splash --
+
+label LMDE
+  kernel LMDE/vmlinuz
+  append boot=casper initrd=LMDE/initrd.lz ip=dhcp showmounts file=/cdrom/preseed/mint.seed netboot=nfs nfsroot=192.168.0.5:/export/LMDE quiet splash --
+
+# rescue
+label rescue
+  kernel linux
+  append initrd=initrd splash=silent rescue=1 showopts
+
+# mediacheck
+label mediachk
+  kernel linux
+  append initrd=initrd splash=silent mediacheck=1 showopts
+
+# bios test
+label firmware
+  kernel linux
+  append initrd=biostest,initrd splash=silent install=exec:/bin/run_biostest showopts
+
+# memory test
+label memtest
+  kernel memtest
+
+default LMDE
+display message
+
+#ui		gfxboot bootlogo message
+#ui		message
+#ui		linux
+implicit	0
+prompt		1
+timeout		0
+

@@ -1,0 +1,20 @@
+$TTL				604800
+@	IN		SOA	gw.framp.local. hostmaster.framp.local. (
+				20050808	; serial
+				8H		; refresh
+				2H		; retry
+				1W		; expiry
+				1D) 		; minimum
+;
+; Name server
+;
+0.168.192.in-addr.arpa.	IN	NS	gw.framp.local.
+;
+; Addresses point to canonical name
+;
+1			IN	PTR	gw.framp.local.
+2			IN	PTR	rt.framp.local.
+3			IN	PTR	mt.framp.local.
+4			IN	PTR	tp.framp.local.
+5			IN	PTR	idefix.framp.local.
+6			IN	PTR	obelix.framp.local.

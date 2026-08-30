@@ -1,0 +1,18 @@
+$TTL				604800
+@	IN		SOA	gw.framp.local. hostmaster.framp.local. (
+				20050808	; serial
+				8H		; refresh
+				2H		; retry
+				1W		; expiry
+				1D) 		; minimum
+;
+; Name server
+;
+50.168.192.in-addr.arpa.	IN	NS	gw.framp.local.
+;
+; Addresses point to canonical name
+;
+1			IN	PTR	gwv.framp.local.
+6			IN	PTR	tpv.framp.local.
+
+

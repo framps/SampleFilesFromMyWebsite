@@ -1,0 +1,4 @@
+#
+#	Mount files in /import/{hostname}/{export}
+#
+*	-fstype=autofs,-Dhost=&		file:/etc/auto.nfssub

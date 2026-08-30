@@ -1,0 +1,16 @@
+/dev/disk/by-id/ata-SAMSUNG_HD400LD_S0AXJ1CPA25939-part1 swap                 swap       defaults              0 0
+/dev/disk/by-id/ata-SAMSUNG_HD400LD_S0AXJ1CPA25939-part2 /                    ext4       acl,user_xattr        1 1
+proc                 /proc                proc       defaults              0 0
+sysfs                /sys                 sysfs      noauto                0 0
+debugfs              /sys/kernel/debug    debugfs    noauto                0 0
+devpts               /dev/pts             devpts     mode=0620,gid=5       0 0
+/dev/disk/by-id/ata-SAMSUNG_HD400LD_S0AXJ1CPA25939-part3 /disks/vol1          ext3       defaults              1 2
+/dev/disk/by-id/ata-WDC_WD2500JB-00GVC0_WD-WCAL76129579-part5 /disks/vol3          ext3       defaults              1 2
+/dev/disk/by-id/ata-WDC_WD2500JB-00GVC0_WD-WCAL76129579-part2 /linux11.2           ext3       defaults              1 2
+/disks/vol1/IsoImages/openSUSE-11.2-DVD-i586.iso /export/SuSE11.2 iso9660 loop
+/disks/vol1/IsoImages/openSUSE-11.3-DVD-i586.iso /export/SuSE11.3 iso9660 loop
+/disks/vol1/IsoImages/openSUSE-11.4-DVD-i586.iso /export/SuSE11.4 iso9660 loop
+/disks/vol1/IsoImages/openSUSE-11.4-DVD-x86_64.iso /export/SuSE11.464 iso9660 loop
+/disks/vol1/IsoImages/linuxmint-10-lxde-cd-i386.iso /export/LXDE iso9660 loop
+/disks/vol1/IsoImages/linuxmint-10-gnome-cd-i386.iso /export/LMDE iso9660 loop
+/dev/disk/by-id/md-uuid-45698e8c:d10d5866:e610d2c3:7b9dde15 /disks/raid1         ext4       defaults              1 2

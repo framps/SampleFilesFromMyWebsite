@@ -1,0 +1,398 @@
+----------------------------
+revision 1.94
+date: 2015-02-11 22:02:05 +0100;  author: framp;  state: Exp;  lines: +12 -6;  commitid: 10054DBC3422E4EC342;
+Fixed messages for restore
+----------------------------
+revision 1.93
+date: 2015-02-08 18:58:54 +0100;  author: framp;  state: Exp;  lines: +4 -5;  commitid: 10054D7A3D938D58A5E;
+Minor change
+----------------------------
+revision 1.92
+date: 2015-02-08 18:04:55 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 10054D7972332363EDF;
+Suppress rm error in upload
+----------------------------
+revision 1.91
+date: 2015-02-08 18:02:37 +0100;  author: framp;  state: Exp;  lines: +3 -4;  commitid: 10054D796973071934A;
+Removed obsolete debug echo
+----------------------------
+revision 1.90
+date: 2015-02-08 17:38:18 +0100;  author: framp;  state: Exp;  lines: +66 -31;  commitid: 10054D790E32A1E5F49;
+Picked up correct code now. Previous was old
+----------------------------
+revision 1.89
+date: 2015-01-18 21:16:11 +0100;  author: framp;  state: Exp;  lines: +9 -9;  commitid: 10054BC147C29C85151;
+Minor change in email subject
+----------------------------
+revision 1.88
+date: 2015-01-10 19:51:07 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 10054B1748B33E2D818;
+Fixed minor upload bug
+----------------------------
+revision 1.87
+date: 2015-01-10 19:20:43 +0100;  author: framp;  state: Exp;  lines: +19 -11;  commitid: 10054B16D632E61C678;
+Script refresh messages globalized
+----------------------------
+revision 1.86
+date: 2015-01-09 20:27:28 +0100;  author: framp;  state: Exp;  lines: +5 -3;  commitid: 10054B02B812D706F98;
+Updated help text to include -u parameter
+----------------------------
+revision 1.85
+date: 2015-01-09 20:09:16 +0100;  author: framp;  state: Exp;  lines: +48 -4;  commitid: 10054B027492A779F46;
+Added update functionality from internet
+----------------------------
+revision 1.84
+date: 2015-01-09 14:08:52 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 10054AFD2D412FC26E0;
+Fixed typo in xbmc backup (Thx Markus)
+----------------------------
+revision 1.83
+date: 2015-01-08 22:39:35 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 10054AEF8E22BC855EB;
+Fixed bug in sendEmail - Thx Kurt for pointing out the issue and providing a fix
+----------------------------
+revision 1.82
+date: 2014-12-30 23:45:01 +0100;  author: framp;  state: Exp;  lines: +16 -9;  commitid: 10054A32AD84CF663AB;
+Enhancement for local script distribution
+----------------------------
+revision 1.81
+date: 2014-12-30 18:11:54 +0100;  author: framp;  state: Exp;  lines: +585 -209;  commitid: 10054A2DC7824FB9845;
+Enabled NLS, now messages are written in English and German, open for other languages
+Reduced trace level to on and off, introduced message leval minmal and detailed
+Minor other changes
+----------------------------
+revision 1.80
+date: 2014-12-15 12:14:10 +0100;  author: framp;  state: Exp;  lines: +36 -15;  commitid: 100548EC24B277E6FCF;
+Fixed issue with syslog when called in commandline
+Loglocation default now /var/log
+Added exclude option
+----------------------------
+revision 1.79
+date: 2014-12-12 18:57:04 +0100;  author: framp;  state: Exp;  lines: +21 -11;  commitid: 100548B2C4317A45CA7;
+Output of backup commands now dumped into /dev/null if no -v flag is used
+----------------------------
+revision 1.78
+date: 2014-12-03 19:43:47 +0100;  author: framp;  state: Exp;  lines: +5 -5;  commitid: 100547F59B2128AD67E;
+verbose flag in tar restore moved
+----------------------------
+revision 1.77
+date: 2014-11-29 19:26:13 +0100;  author: framp;  state: Exp;  lines: +6 -4;  commitid: 100547A0FA425A54925;
+Minor message correction for restore
+----------------------------
+revision 1.76
+date: 2014-11-26 21:46:40 +0100;  author: framp;  state: Exp;  lines: +76 -55;  commitid: 10054763BE51B2476E6;
+Introduced new log level error
+Added again some messages for restore (Thx Markus for testing all this restore stuff with external root file system)
+----------------------------
+revision 1.75
+date: 2014-11-20 22:04:41 +0100;  author: framp;  state: Exp;  lines: +45 -13;  commitid: 100546E572B271D9250;
+Updated log statements for restore and added addtl debug code
+----------------------------
+revision 1.74
+date: 2014-11-19 21:51:36 +0100;  author: framp;  state: Exp;  lines: +11 -7;  commitid: 100546D028822E2C1B1;
+minor enhancements for restore
+----------------------------
+revision 1.73
+date: 2014-11-18 22:32:28 +0100;  author: framp;  state: Exp;  lines: +11 -7;  commitid: 100546BBAE335387A81;
+Minor changes
+----------------------------
+revision 1.72
+date: 2014-11-18 20:50:22 +0100;  author: framp;  state: Exp;  lines: +30 -26;  commitid: 100546BA2C225F367D1;
+Reshuffled some logging
+Fixed typose in retsore
+Enhanced logging for restore
+Restore now logs in home dir
+----------------------------
+revision 1.71
+date: 2014-11-17 19:39:13 +0100;  author: framp;  state: Exp;  lines: +8 -8;  commitid: 100546A40BE16D1F839;
+Enhanced messages and help text for restore
+----------------------------
+revision 1.70
+date: 2014-11-13 20:34:51 +0100;  author: framp;  state: Exp;  lines: +7 -7;  commitid: 100546507C52BD9A94D;
+Addtl fix for log type 2
+----------------------------
+revision 1.69
+date: 2014-11-13 19:49:07 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 1005464FD1118C2605C;
+Fixed bug with log location
+----------------------------
+revision 1.68
+date: 2014-11-09 17:54:27 +0100;  author: framp;  state: Exp;  lines: +15 -16;  commitid: 100545F9C1D4C41CEC3;
+Restore device is now absolute (needs /dev/abc)
+----------------------------
+revision 1.67
+date: 2014-11-09 17:36:06 +0100;  author: framp;  state: Exp;  lines: +11 -6;  commitid: 100545F97D5472F1715;
+syslog was deleted if scritp was anceled :-(
+----------------------------
+revision 1.66
+date: 2014-11-09 17:20:12 +0100;  author: framp;  state: Exp;  lines: +16 -17;  commitid: 100545F942F42B325B7;
+Changed root device into root partition
+----------------------------
+revision 1.65
+date: 2014-11-09 17:02:23 +0100;  author: framp;  state: Exp;  lines: +6 -5;  commitid: 100545F900741EFC0F2;
+*** empty log message ***
+----------------------------
+revision 1.64
+date: 2014-11-09 16:56:18 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 100545F8E934119FF7D;
+Added defualt for restore device
+----------------------------
+revision 1.63
+date: 2014-11-09 16:51:11 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 100545F8D6440508AEF;
+Fixed help text typo
+----------------------------
+revision 1.62
+date: 2014-11-09 16:46:54 +0100;  author: framp;  state: Exp;  lines: +107 -56;  commitid: 100545F8B8E3F3CF06D;
+1) Added -L parm 3 to write log into current directory
+2) Restore now allows to define an external root device which allows to restore a backup done with an external root FS (USB stick, ext disk etc) again to an external root FS
+3) Fixed bug that backup is deleted when the log is stored in the backup directory (thx Michael)
+----------------------------
+revision 1.61
+date: 2014-11-02 18:36:00 +0100;  author: framp;  state: Exp;  lines: +14 -14;  commitid: 10054566B62158F7E8B;
+Another fix for PATH pupulation (Thx Martin)
+----------------------------
+revision 1.60
+date: 2014-11-02 16:41:13 +0100;  author: framp;  state: Exp;  lines: +14 -12;  commitid: 100545650791582AFBE;
+Fixed a bug regarding pupulation of PATH for crontab invocation (Thx Martin)
+----------------------------
+revision 1.59
+date: 2014-10-30 20:58:11 +0100;  author: framp;  state: Exp;  lines: +11 -9;  commitid: 1005452982A1BE19826;
+Fixed config log statement and minor other stuff
+----------------------------
+revision 1.58
+date: 2014-10-27 20:36:24 +0100;  author: framp;  state: Exp;  lines: +16 -5;  commitid: 100544E9EA036A95AB7;
+Fixed issue with path which may not exist in crontab and start/stopservice
+----------------------------
+revision 1.57
+date: 2014-10-27 17:36:21 +0100;  author: framp;  state: Exp;  lines: +8 -7;  commitid: 100544E746D1FCF1AD5;
+Minor log enhancements
+----------------------------
+revision 1.56
+date: 2014-10-27 11:21:08 +0100;  author: framp;  state: Exp;  lines: +8 -4;  commitid: 100544E1C78136E01F0;
+HARDLINKS now has a default
+----------------------------
+revision 1.55
+date: 2014-10-26 21:01:39 +0100;  author: framp;  state: Exp;  lines: +7 -5;  commitid: 100544D531716CDFFBD;
+Some addtl traces
+----------------------------
+revision 1.54
+date: 2014-10-23 19:40:01 +0200;  author: framp;  state: Exp;  lines: +7 -4;  commitid: 10054493D5D1F585298;
+-b and -D are now explained in help text
+----------------------------
+revision 1.53
+date: 2014-10-20 22:33:44 +0200;  author: framp;  state: Exp;  lines: +48 -28;  commitid: 100544571722602CFFD;
+1) Synced changed backup dir structure with retsore
+2) Added -D and -b flags for dd
+----------------------------
+revision 1.52
+date: 2014-10-19 16:03:21 +0200;  author: framp;  state: Exp;  lines: +9 -7;  commitid: 1005443C486104270FC;
+Fixed issue with link-dest for rsync and introduced BACKUPPATH_PARAMETER
+----------------------------
+revision 1.51
+date: 2014-10-18 23:09:59 +0200;  author: framp;  state: Exp;  lines: +94 -78;  commitid: 1005442D5BF2A91F28B;
+1) gzypped dd image is now a new backuptype
+2) Streamlined logging
+3) Restructuring of backup dirs used
+4) Streamlining messages written to console and log
+----------------------------
+revision 1.50
+date: 2014-10-12 22:49:32 +0200;  author: framp;  state: Exp;  lines: +51 -40;  commitid: 100543AE92D310D525E;
+1) Commands executed are now logged
+2) Reduce info logs
+----------------------------
+revision 1.49
+date: 2014-10-12 00:18:43 +0200;  author: framp;  state: Exp;  lines: +3 -3;  commitid: 1005439ACB62D1E6941;
+*** empty log message ***
+----------------------------
+revision 1.48
+date: 2014-10-12 00:18:03 +0200;  author: framp;  state: Exp;  lines: +10 -10;  commitid: 1005439AC662CBC3D06;
+Typo in sample in script fixed
+----------------------------
+revision 1.47
+date: 2014-10-11 19:05:14 +0200;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 1005439631D0EFDACCF;
+Fixed type in line 509 which cause dd with zip to fail. Thx 288GTO :-)
+----------------------------
+revision 1.46
+date: 2014-10-09 23:51:09 +0200;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 1005437034039F0C8FF;
+Minor change for sendEMail
+----------------------------
+revision 1.45
+date: 2014-10-09 21:46:08 +0200;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 1005436E5BE24E044F7;
+Fixed issue with rsync not to use hardlinks due to code changes :-(
+----------------------------
+revision 1.44
+date: 2014-09-19 19:53:43 +0200;  author: framp;  state: Exp;  lines: +158 -65;  commitid: 100541C6D8E13CAC4DF;
+Added new logging and check for mounted backup path
+----------------------------
+revision 1.43
+date: 2014-08-24 09:27:46 +0200;  author: framp;  state: Exp;  lines: +7 -3;  commitid: 10053F993E10E72AB0A;
+Fixed issue with getUser and root caller
+----------------------------
+revision 1.42
+date: 2014-08-22 20:37:40 +0200;  author: framp;  state: Exp;  lines: +91 -47;  commitid: 10053F78DBE28E8B0FB;
+Now it's possible to create tar and tgz archives
+----------------------------
+revision 1.41
+date: 2014-08-18 22:01:51 +0200;  author: framp;  state: Exp;  lines: +48 -17;  commitid: 10053F25B841ABB1413;
+Added Parms -Z and -5 and check whether only two partiions exist
+----------------------------
+revision 1.40
+date: 2014-08-17 22:16:14 +0200;  author: framp;  state: Exp;  lines: +14 -10;  commitid: 10053F10D7A4428A3CC;
+Enhanced local script deployment
+----------------------------
+revision 1.39
+date: 2014-08-17 19:04:06 +0200;  author: framp;  state: Exp;  lines: +119 -69;  commitid: 10053F0E05B2CB5D4AE;
+Added lot's of debug statements and log messages.
+Introduced -K flag to turn off hard link usage with rsync
+----------------------------
+revision 1.38
+date: 2014-08-15 00:04:32 +0200;  author: framp;  state: Exp;  lines: +36 -41;  commitid: 10053ED32402C870A99;
+Added xbmc support again and removed obsolete -b option
+----------------------------
+revision 1.37
+date: 2014-08-14 20:12:25 +0200;  author: framp;  state: Exp;  lines: +182 -110;  commitid: 10053ECFBD1127FE8DA;
+1) Added ssmtp support
+2) Added entry/exit logs
+3) Now all parms can be defined in conf file
+4) Minor fixes
+----------------------------
+revision 1.36
+date: 2014-08-05 21:57:27 +0200;  author: framp;  state: Exp;  lines: +4 -6;  commitid: 10053E1371A14D7EC71;
+added attachement feature again
+----------------------------
+revision 1.35
+date: 2014-08-05 21:42:56 +0200;  author: framp;  state: Exp;  lines: +15 -7;  commitid: 10053E133B7134D85FF;
+added support for ssmtp
+----------------------------
+revision 1.34
+date: 2014-05-02 15:28:12 +0200;  author: framp;  state: Exp;  lines: +163 -154;  commitid: 10053639D300F7F4B4D;
+Added support to have different backup types in one backup directory for a system
+Fixed an issue with deletion of backups if backup is canceled
+Added trace for options
+----------------------------
+revision 1.33
+date: 2014-04-12 19:38:07 +0200;  author: framp;  state: Exp;  lines: +44 -17;  commitid: 100534979D50F734763;
+Added some comments, added support for deafult email_parms in config file
+----------------------------
+revision 1.32
+date: 2014-03-18 21:23:32 +0100;  author: framp;  state: Exp;  lines: +24 -11;  commitid: 1005328AB37120C198D;
+Addtl signal cathcing and traces
+----------------------------
+revision 1.31
+date: 2014-03-18 14:42:00 +0100;  author: framp;  state: Exp;  lines: +5 -5;  commitid: 10053284D1B1634A80F;
+Added vanished rc 24 also
+----------------------------
+revision 1.30
+date: 2014-03-10 21:33:27 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 100531E217F1889010C;
+Fixed issue with maillog destroying rsync functionality
+----------------------------
+revision 1.29
+date: 2014-03-02 12:34:04 +0100;  author: framp;  state: Exp;  lines: +70 -33;  commitid: 100531317161022A521;
+Removed attachement of logfile
+----------------------------
+revision 1.28
+date: 2014-02-16 21:34:51 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 100530120E1205456D2;
+iAdded pi user for -y
+----------------------------
+revision 1.27
+date: 2014-02-09 22:03:37 +0100;  author: framp;  state: Exp;  lines: +15 -8;  commitid: 10052F7ED1918E70B2A;
+Minor updates
+----------------------------
+revision 1.26
+date: 2014-02-09 21:34:59 +0100;  author: framp;  state: Exp;  lines: +3 -3;  commitid: 10052F7E66716BE1E5E;
+Update cvs message
+----------------------------
+revision 1.25
+date: 2014-02-09 21:31:32 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 10052F7E5981688947F;
+Update cvs string
+----------------------------
+revision 1.24
+date: 2014-02-09 21:02:30 +0100;  author: framp;  state: Exp;  lines: +335 -102;  commitid: 10052F7DEB114E25F3C;
+Now using /usr/local/etc config file and adding hidden restore function
+----------------------------
+revision 1.23
+date: 2014-01-30 19:49:23 +0100;  author: framp;  state: Exp;  lines: +17 -4;  commitid: 10052EA9E951175DDDF;
+Optional file /usr/local/etc/raspiBackup.config can be used
+----------------------------
+revision 1.22
+date: 2014-01-14 19:46:25 +0100;  author: framp;  state: Exp;  lines: +5 -5;  commitid: 10052D585F313C2BF18;
+Added eval for start/stop of services
+----------------------------
+revision 1.21
+date: 2013-12-20 11:06:22 +0100;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 10052B4169910DC0029;
+Default is dd now
+----------------------------
+revision 1.20
+date: 2013-12-17 19:43:36 +0100;  author: framp;  state: Exp;  lines: +15 -9;  commitid: 10052B09B4D118AA7DF;
+Restore of mbr
+----------------------------
+revision 1.19
+date: 2013-11-30 21:37:46 +0100;  author: framp;  state: Exp;  lines: +63 -19;  commitid: 100529A4C8A239150D0;
+Added zip and support for othe email prog
+----------------------------
+revision 1.18
+date: 2013-11-09 18:12:11 +0100;  author: framp;  state: Exp;  lines: +9 -2;  commitid: 100527E6CE40DB61742;
+Added cvs tags
+----------------------------
+revision 1.17
+date: 2013-11-08 20:32:14 +0100;  author: framp;  state: Exp;  lines: +3 -3;  commitid: 100527D3C2C1361E402;
+Fixed check for ext34 on target backup dir
+----------------------------
+revision 1.16
+date: 2013-11-06 22:18:26 +0100;  author: framp;  state: Exp;  lines: +4 -1;  commitid: 100527AB21811F41B3C;
+Added deploy function again
+----------------------------
+revision 1.15
+date: 2013-11-06 21:52:29 +0100;  author: framp;  state: Exp;  lines: +59 -42;  commitid: 100527AAC010FF1502F;
+Fixed serious removal bug
+----------------------------
+revision 1.14
+date: 2013-11-04 19:59:09 +0100;  author: framp;  state: Exp;  lines: +15 -6;  commitid: 1005277EE681F2609FA;
+Fixed issue with removal of temp dir and check fro existing email prog
+----------------------------
+revision 1.13
+date: 2013-10-16 22:34:58 +0200;  author: framp;  state: Exp;  lines: +4 -4;  commitid: 100525EF86817EEBA0A;
+Changes eMail text
+----------------------------
+revision 1.12
+date: 2013-10-07 19:26:39 +0200;  author: framp;  state: Exp;  lines: +3 -3;  commitid: 1005252EEC40FF1963E;
+Hostname in message text
+----------------------------
+revision 1.11
+date: 2013-10-03 21:30:27 +0200;  author: framp;  state: Exp;  lines: +6 -1;  commitid: 100524DC5B71CB8D6E7;
+Includes backup of all types now
+----------------------------
+revision 1.10
+date: 2013-10-02 23:48:26 +0200;  author: framp;  state: Exp;  lines: +87 -59;  commitid: 100524C949424B414B4;
+added backuptyp in backup name and misc minor enhancements
+----------------------------
+revision 1.9
+date: 2013-09-30 19:08:45 +0200;  author: framp;  state: Exp;  lines: +14 -9;  commitid: 1005249B009153CE96B;
+added logger and corrected log position in code
+----------------------------
+revision 1.8
+date: 2013-09-29 19:21:30 +0200;  author: framp;  state: Exp;  lines: +9 -9;  commitid: 100524861881FC8DA40;
+Moved root check up
+----------------------------
+revision 1.7
+date: 2013-09-29 11:45:01 +0200;  author: framp;  state: Exp;  lines: +11 -5;  commitid: 1005247F68C0D7A35BC;
+Added addtl checks and move logging enablement to end
+----------------------------
+revision 1.6
+date: 2013-09-22 21:05:50 +0200;  author: framp;  state: Exp;  lines: +130 -58;  commitid: 100523F3F7F16C02F22;
+rsync enhancements
+----------------------------
+revision 1.5
+date: 2013-09-13 20:38:38 +0200;  author: framp;  state: Exp;  lines: +105 -40;  commitid: 10052335BA31E9BEC45;
+Added rsync support
+----------------------------
+revision 1.4
+date: 2013-08-25 17:08:18 +0200;  author: framp;  state: Exp;  lines: +1 -1;  commitid: 100521A1DC90DC26D9D;
+Handling of RC 1 in tar
+----------------------------
+revision 1.3
+date: 2013-08-25 17:01:12 +0200;  author: framp;  state: Exp;  lines: +7 -2;  commitid: 100521A1C2C0C576A44;
+Handling of tar RC 1
+----------------------------
+revision 1.2
+date: 2013-08-07 21:29:40 +0200;  author: framp;  state: Exp;  lines: +92 -38;  commitid: 1005202A0121AEBCECA;
+Additional error checking and email support
+----------------------------
+revision 1.1
+date: 2013-08-07 21:28:14 +0200;  author: framp;  state: Exp;  commitid: 10052029FC71A98602F;
+Initial version
+=============================================================================

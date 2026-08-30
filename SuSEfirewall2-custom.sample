@@ -1,0 +1,155 @@
+# Copyright (c) 2001 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Authors: Marc Heuse <marc@suse.de>,
+#          Volker Kuhlmann <kuhlmav@elec.canterbury.ac.nz>
+#
+# /etc/sysconfig/scripts/SuSEfirewall2-custom
+#
+# ------------------------------------------------------------------------
+#
+# This is file is for SuSEfirewall2 and is an example for using
+# the hooks which are supplied to load customized ipchains rules.
+#
+# THERE IS NO HELP FOR USING HOOKS EXCEPT THIS FILE ! SO READ CAREFULLY !
+# IT IS USEFUL TO CROSS-READ /sbin/SuSEfirewall2 TO SEE HOW HOOKS WORK !
+#
+# ------------------------------------------------------------------------
+
+fw_custom_before_antispoofing() {
+    # these rules will be loaded before any anti spoofing rules will be
+    # loaded. Effectively the only filter lists already effective are
+    # 1) allow any traffic via the loopback interface, 2) allow DHCP stuff,
+    # 3) allow SAMBA stuff [2 and 3 only if FW_SERVICE_... are set to "yes"]
+    # You can use this hook to prevent logging of uninteresting broadcast
+    # packets or to allow certain packet through the anti-spoofing mechanism.
+
+#example: allow incoming multicast packets for any routing protocol
+#iptables -A INPUT -j ACCEPT -d 224.0.0.0/24
+
+   true
+}
+
+fw_custom_before_port_handling() { # could also be named "after_antispoofing()"
+    # these rules will be loaded after the anti-spoofing and icmp handling
+    # but before any IP protocol or TCP/UDP port allow/protection rules
+    # will be set.
+    # You can use this hook to allow/deny certain IP protocols or TCP/UDP
+    # ports before the SuSEfirewall2 generated rules are hit.
+
+#example: always filter backorifice/netbus trojan connect requests and log them.
+#for target in LOG DROP; do
+#    for chain in input_ext input_dmz input_int forward_int forward_ext forward_dmz; do
+#        iptables -A $chain -j $target -p tcp --dport 31337
+#        iptables -A $chain -j $target -p udp --dport 31337
+#        iptables -A $chain -j $target -p tcp --dport 12345:12346
+#        iptables -A $chain -j $target -p udp --dport 12345:12346
+#    done
+#done
+
+    true
+}
+
+fw_custom_before_masq() { # could also be named "after_port_handling()"
+    # these rules will be loaded after the IP protocol and TCP/UDP port
+    # handling, but before any IP forwarding (routing), masquerading
+    # will be done.
+    # NOTE: reverse masquerading is before directly after
+    #       fw_custom_before_port_handling !!!!
+    # You can use this hook to ... hmmm ... I'm sure you'll find a use for
+    # this ...
+
+    true
+}
+
+fw_custom_before_denyall() { # could also be named "after_forwardmasq()"
+    # these are the rules to be loaded after IP forwarding and masquerading
+    # but before the logging and deny all section is set by SuSEfirewall2.
+    # You can use this hook to prevent the logging of annoying packets.
+
+#example: prevent logging of talk requests from anywhere
+#for chain in input_ext input_dmz input_int forward_int forward_ext forward_dmz; do
+#    iptables -A $chain -j DENY -p udp --dport 517:518
+#done
+#
+#########################################################################################
+#
+# suppress logging messages for some ports
+#
+# lpd
+#    iptables -I INPUT -i dsl0 -p udp --dport 515 -j DROP
+# netbios ssn
+    iptables -I INPUT -i dsl0 -p tcp --dport 135 -j DROP
+    iptables -I INPUT -i dsl0 -p udp --dport 135 -j DROP
+    iptables -I INPUT -i dsl0 -p tcp --dport 139 -j DROP
+    iptables -I INPUT -i dsl0 -p udp --dport 139 -j DROP
+    iptables -I INPUT -i dsl0 -p tcp --dport 445 -j DROP
+    iptables -I INPUT -i dsl0 -p udp --dport 445 -j DROP
+# http
+    iptables -I INPUT -i dsl0 -p tcp --dport 80 -j DROP
+    iptables -I INPUT -i dsl0 -p tcp --dport 8080 -j DROP
+    iptables -I INPUT -i dsl0 -p tcp --dport 3128 -j DROP
+    iptables -I INPUT -i dsl0 -p tcp --dport 1080 -j DROP
+# x11
+    iptables -I INPUT -i dsl0 -p tcp --dport 6000:6063 -j DROP
+# ignore eDonkey requests
+    iptables -I INPUT -i dsl0 -p tcp --dport 4661:4665 -j DROP
+    iptables -I INPUT -i dsl0 -p udp --dport 4661:4665 -j DROP
+    iptables -I INPUT -i dsl0 -p tcp --sport 4661:4665 -j DROP
+    iptables -I INPUT -i dsl0 -p udp --sport 4661:4665 -j DROP
+# unknown
+#	proxycan.quakenet.org
+    iptables -I INPUT -i dsl0 -s 213.221.189.10 -j DROP
+    iptables -I OUTPUT -o dsl0 -d 213.221.189.10 -j DROP
+# kazaa
+    iptables -I INPUT -i dsl0 -p tcp --dport 1214 -j DROP
+    iptables -I INPUT -i eth2 -p tcp --sport 1214 -j DROP
+# Block DNS session requests
+   iptables -I INPUT -i dsl0 -p udp --dport 53 -j DROP
+   iptables -I INPUT -i dsl0 -p tcp --dport 53 -j DROP
+# mss adjustment for clients
+# see c't 7/2002
+    iptables -I FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+
+#
+# enable VPN
+#
+#    iptables -I INPUT -p udp -i dsl0 --sport 500 --dport 500 -j ACCEPT
+#    iptables -I OUTPUT -p udp -o dsl0 --sport 500 --dport 500 -j ACCEPT
+# ESP encryption and authentication
+#    iptables -I INPUT -p 50 -i dsl0 -j ACCEPT
+#    iptables -I OUTPUT -p 50 -o dsl0 -j ACCEPT
+# AH authentication header
+#    iptables -I INPUT -p 51 -i dsl0 -j ACCEPT
+#    iptables -I OUTPUT -p 51 -o dsl0 -j ACCEPT
+
+# enable NTP
+
+#    iptables -I INPUT -i dsl0 -p udp --state ESTABLISHED,RELATED --sport 123 --dport 123 -j ACCEPT
+#    iptables -I OUTPUT -o dsl0 -p tcp --state NEW,ESTABLISHED,RELATED --dport 123 --sport 123 -j ACCEPT
+
+# transparent proxying
+
+#    iptables -t nat -I PREROUTING -i nic0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+
+# ntp
+    iptables -t nat -I PREROUTING -i nic0 -p udp --dport 123 -j REDIRECT --to-port 123
+
+# 
+# reject ssh attacks 
+# more than 1 per minute from one IP will be delayed for 1 min
+#
+
+TRUSTED_HOST="192.168.0.0/255.255.0.0"
+
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --set --name SSH
+#iptables -A INPUT -p tcp --dport 22 -m state --state NEW -j SSH_WHITELIST
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j LOG --log-prefix SSH_brute_force
+iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --update --seconds 60 --hitcount 2 --rttl --name SSH -j DROP
+#iptables -N SSH_WHITELIST
+#iptables -A SSH_WHITELIST -s $TRUSTED_HOST -m recent --remove --name SSH -j ACCEPT
+
+# >>> don't delete begin
+true
+}
+# <<< don't delete en end
+

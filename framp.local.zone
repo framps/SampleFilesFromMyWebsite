@@ -1,0 +1,45 @@
+$ttl			604800
+@			IN SOA	gw.framp.local. hostmaster.framp.local. (
+					20050808	; serial
+					8H		; refresh seconds
+					2H 		; retry seconds
+					1W		; expiry seconds
+					1D )		; minimum seconds
+;
+; Name server
+;
+framp.local.		IN	NS	gw.framp.local.		; INetAddess of NameServer	
+			IN     	MX	10 gw.framp.local.	; primary EMail exchanger
+;
+; Addresses for the canonical names
+;
+localhost 		IN	A		127.0.0.1
+gw.framp.local.		IN	A		192.168.0.1
+rt.framp.local.		IN	A		192.168.0.2
+mt.framp.local.		IN     	A		192.168.0.3
+tp.framp.local.		IN     	A		192.168.0.4
+obelix.framp.local.	IN	A		192.168.0.6
+idefix.framp.local.	IN	A		192.168.0.5
+
+;
+wl.framp.local.		IN	A		192.168.3.7
+tp3.framp.local.	IN     	A		192.168.3.4
+;
+tpv.framp.local.	IN	A		192.168.50.6
+gwv.framp.local.	IN	A		192.168.50.1
+;
+; Aliases
+;
+gateway			IN	CNAME		gw
+mirakulix		IN	CNAME		rt
+troubardix		IN	CNAME		mt
+ob 			IN	CNAME		obelix
+id			IN	CNAME		idefix
+thinkpad		IN	CNAME		tp
+www			IN	CNAME		gw
+ftp			IN	CNAME		gw
+mail			IN	CNAME		gw
+;
+; AutoConfig
+;
+wpad			IN	CNAME		gateway
